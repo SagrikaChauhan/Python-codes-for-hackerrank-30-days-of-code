@@ -2,12 +2,20 @@ n = int(input())
 d = {}
 
 d = dict(input().split() for _ in range(n))
-name=[]
-for i in range(0,n):
-    name.append(input())
+while True:
 
-for key,value in d.items():
-    if key in name:
-        print (key+"="+value)
-    else:
-        print("Not found")
+    try:
+
+        search = input()
+
+        if search in d:
+
+            print(search + '=' + d[search])
+    
+        else:
+
+            print('Not found')
+                        
+    except:
+
+        break
