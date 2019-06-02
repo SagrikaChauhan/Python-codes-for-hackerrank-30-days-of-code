@@ -5,17 +5,11 @@ d = dict(input().split() for _ in range(n))
 while True:
 
     try:
-
         search = input()
-
         if search in d:
-
             print(search + '=' + d[search])
-    
         else:
-
             print('Not found')
                         
     except:
-
         break
